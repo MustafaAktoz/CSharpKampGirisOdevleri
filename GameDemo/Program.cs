@@ -15,7 +15,7 @@ namespace GameDemo
 
         static Program()
         {
-            _userService = new UserManager(new UserDal(),new MernisCheckAdapter());
+            _userService = new UserManager(new UserDal(),new EDevletUserCheckAdapter());
             _campaignService = new CampaignManager(new CampaignDal());
             _sellService = new SellManager(new SellDal(),_campaignService);
         }
